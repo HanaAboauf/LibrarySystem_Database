@@ -11,7 +11,7 @@ namespace LibrarySystem.Models
     {
         #region Attributes
 
-        public DateTime DateTime { get; set; }
+        public DateTime LoanDate { get; set; }
 
         public LoanStatus LoanStatus { get; set; }
         #endregion

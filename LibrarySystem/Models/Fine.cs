@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibrarySystem.Models.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,9 +14,11 @@ namespace LibrarySystem.Models
 
         public decimal Amount { get; set; }
 
-        public DateTime DateIssued { get; set; }
+        public DateTime IssueDate { get; set; }
 
         public DateTime PaidDate { get; set; }
+
+        public FineStatus FineStatus { get; set; }
 
         #endregion
     }
