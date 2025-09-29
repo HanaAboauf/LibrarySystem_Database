@@ -13,7 +13,17 @@ namespace LibrarySystem.Models
 
         public string LastName { get; set; }
 
-        public DateTime DateOfBirth { get; set; } 
+        public DateTime DateOfBirth { get; set; }
+        #endregion
+
+        #region Relationships
+
+        #region Book-Author relationship
+
+        public ICollection<Book>? Books { get; set; } = new HashSet<Book>();
+
+        #endregion
+
         #endregion
     }
 }

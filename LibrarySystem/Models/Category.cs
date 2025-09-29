@@ -15,5 +15,16 @@ namespace LibrarySystem.Models
 
         public string Description { get; set; }
         #endregion
+
+
+        #region Relationships
+
+        #region Book-Category relationship
+
+        public ICollection<Book>? Books { get; set; } = new HashSet<Book>();
+
+        #endregion
+
+        #endregion
     }
 }

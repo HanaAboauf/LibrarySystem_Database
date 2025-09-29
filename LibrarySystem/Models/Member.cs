@@ -26,5 +26,13 @@ namespace LibrarySystem.Models
 
 
         #endregion
+
+        #region Relationships
+
+        #region Member-MemberLoan relationship
+
+        public ICollection<MemberLoan> MemberLoans { get; set; } = new HashSet<MemberLoan>();
+        #endregion
+        #endregion
     }
 }

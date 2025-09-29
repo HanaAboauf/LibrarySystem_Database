@@ -21,5 +21,22 @@ namespace LibrarySystem.Models
         public FineStatus FineStatus { get; set; }
 
         #endregion
+
+
+
+        #region Relationships
+
+        #region Loan-Fine relationship
+
+        public int LoanId { get; set; }
+        public Loan? Loan { get; set; }
+
+        #endregion
+
+        #region Book-Category relationship
+
+        #endregion
+
+        #endregion
     }
 }

@@ -13,21 +13,36 @@ namespace LibrarySystem.ConfigrationModels
     {
         public void Configure(EntityTypeBuilder<Fine> builder)
         {
- 
+
             #region Main configration of Entity
 
-            builder.Property(f=>f.Amount)
+            builder.Property(f => f.Amount)
                      .HasColumnType("decimal")
-                     .HasPrecision(6,2);
+                     .HasPrecision(6, 2);
 
             builder.Property(f => f.IssueDate)
                    .HasDefaultValueSql("GETDATE()");
 
 
-            builder.Property(f=>f.FineStatus)
+            builder.Property(f => f.FineStatus)
                    .HasConversion<string>();
 
             #endregion
+
+
+
+            #region Relationships configrations
+
+            #region Fine-Laon relationship
+            builder.HasOne(f => f.Loan)
+                   .WithOne(l => l.Fine)
+                   .HasForeignKey<Fine>(f => f.LoanId);
+
+            #endregion
+
+
+            #endregion
+
         }
     }
 }

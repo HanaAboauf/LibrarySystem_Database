@@ -20,19 +20,36 @@ namespace LibrarySystem.ConfigrationModels
 
             builder.Property(b => b.Price)
                    .HasColumnType("decimal")
-                   .HasPrecision(6,2);
+                   .HasPrecision(6, 2);
 
             builder.ToTable(
-                t=>{
+                t =>
+                {
                     t.HasCheckConstraint("PublicationYearCheckConstraint", "PublicationYear between 1950 and YEAR(GETDATE())");
                     t.HasCheckConstraint("AvailableCopiesCheckConstraint", "AvailableCopies<= TotalCopies");
                 });
+            #endregion
 
+            #region Relationships
 
+            #region Book-Author relationship
 
+            builder.HasOne(b => b.Author)
+                   .WithMany(a => a.Books)
+                   .HasForeignKey(b => b.AuthorId);
 
+            #endregion
+
+            #region Book-Category relationship
+
+            builder.HasOne(b => b.Category)
+                   .WithMany(c=>c.Books)
+                   .HasForeignKey(b => b.CategoryId);
+
+            #endregion
 
             #endregion
         }
     }
 }
+

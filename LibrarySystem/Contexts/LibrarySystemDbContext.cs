@@ -34,5 +34,10 @@ namespace LibrarySystem.Contexts
 
         #endregion
 
+        #region Relationship models
+
+        public DbSet<MemberLoan> MemberLoans { get; set; }
+        #endregion
+
     }
 }
