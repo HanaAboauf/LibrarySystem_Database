@@ -42,7 +42,7 @@ namespace LibrarySystem.ConfigrationModels
 
             builder.ToTable(
                 t => {
-                t.HasCheckConstraint("EmailCheckConstraint", "Email like '--%@-%.-%'");
+                t.HasCheckConstraint("EmailCheckConstraint", "Email like '_%@_%._%'");
                 t.HasCheckConstraint("PhoneNumberCheckConstraint", "PhoneNumber like '01%' ");
                 });
 
