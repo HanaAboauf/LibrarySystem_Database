@@ -1,4 +1,4 @@
-<img width="900" height="565" alt="image" src="https://github.com/user-attachments/assets/0631bd88-0226-4de1-bdd4-cc8b2f0cdb5e" /># 📚 Library Management System (LMS)
+# 📚 Library Management System (LMS)
 
 ## 1. Overview
 
@@ -125,7 +125,7 @@ The **Library Management System (LMS)** is designed to manage books, categories,
 
 ## 3. Class Diagram
 
-*(Insert diagram here if available)*
+<img width="900" height="565" alt="image" src="https://github.com/user-attachments/assets/0631bd88-0226-4de1-bdd4-cc8b2f0cdb5e" />
 
 ---
 
@@ -171,8 +171,8 @@ The **Library Management System (LMS)** is designed to manage books, categories,
 ---
 
 ## 5. ER Diagram
+<img width="900" height="565" alt="image" src="https://github.com/user-attachments/assets/0631bd88-0226-4de1-bdd4-cc8b2f0cdb5e" />
 
-*(Insert ER diagram here if available)*
 
 ---
 
