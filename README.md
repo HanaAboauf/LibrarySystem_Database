@@ -171,7 +171,8 @@ The **Library Management System (LMS)** is designed to manage books, categories,
 ---
 
 ## 5. ER Diagram
-<img width="900" height="565" alt="image" src="https://github.com/user-attachments/assets/0631bd88-0226-4de1-bdd4-cc8b2f0cdb5e" />
+<img width="900" height="481" alt="image" src="https://github.com/user-attachments/assets/aaa2a84a-82bf-46d4-8306-fa51b8ab6c27" />
+
 
 
 ---
