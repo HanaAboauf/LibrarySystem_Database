@@ -179,13 +179,15 @@ The **Library Management System (LMS)** is designed to manage books, categories,
 
 ## 6. Database Schema
 
-*(Include schema script or diagram)*
+<img width="858" height="572" alt="image" src="https://github.com/user-attachments/assets/44f35536-19fc-4a64-90ad-61a621861b39" />
+
 
 ---
 
 ## 7. Database Diagram
 
-*(Insert diagram here if available)*
+<img width="900" height="523" alt="image" src="https://github.com/user-attachments/assets/7c3f5db3-44ae-4d23-9644-4e3d126ff845" />
+
 
 ---
 
