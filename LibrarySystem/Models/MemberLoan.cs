@@ -13,7 +13,7 @@ namespace LibrarySystem.Models
 
         public DateTime DueDate{ get; set; }
 
-        public DateTime ReturnDate { get; set; }
+        public DateTime? ReturnDate { get; set; }
         #endregion
         #region Relationship attributes
         public int MemberId { get; set; }

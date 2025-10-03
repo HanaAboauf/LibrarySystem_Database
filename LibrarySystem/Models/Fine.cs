@@ -16,7 +16,7 @@ namespace LibrarySystem.Models
 
         public DateTime IssueDate { get; set; }
 
-        public DateTime PaidDate { get; set; }
+        public DateTime? PaidDate { get; set; }
 
         public FineStatus FineStatus { get; set; }
 

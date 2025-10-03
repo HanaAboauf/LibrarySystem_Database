@@ -4,6 +4,7 @@ using LibrarySystem.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibrarySystem.Migrations
 {
     [DbContext(typeof(LibrarySystemDbContext))]
-    partial class LibrarySystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251003012217_returnDateNullable")]
+    partial class returnDateNullable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -141,7 +144,7 @@ namespace LibrarySystem.Migrations
                     b.Property<int>("LoanId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("PaidDate")
+                    b.Property<DateTime>("PaidDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
